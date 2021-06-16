@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="purchasePartiesPane" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="640.0" style="-fx-border-color: #000000; -fx-border-width: 2; -fx-border-radius: 3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ViewPurchasePartyController">
+   <children>
+      <Button fx:id="edit" layoutX="409.0" layoutY="409.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+      <Button fx:id="save" layoutX="482.0" layoutY="409.0" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="60.0" text="save" />
+      <Button fx:id="close" layoutX="557.0" layoutY="409.0" mnemonicParsing="false" onAction="#onClose" prefHeight="25.0" prefWidth="60.0" text="Close" />
+      <TableView fx:id="purchasepartiestable" layoutX="25.0" layoutY="43.0" prefHeight="351.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="130.0" text="Company Name" />
+            <TableColumn prefWidth="105.0" text="Owner Name" />
+            <TableColumn prefWidth="107.0" text="Product" />
+            <TableColumn prefWidth="135.0" text="State" />
+          <TableColumn prefWidth="122.0" text="Total Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="14.0" text="Purchase Parties : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   
+</AnchorPane>

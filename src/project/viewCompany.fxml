@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="companyDetailsPane" centerShape="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="640.0" style="-fx-border-color: #000000; -fx-border-width: 2; -fx-border-radius: 3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ViewCompanyController">
+   <children>
+      <Button fx:id="edit" layoutX="401.0" layoutY="416.0" mnemonicParsing="false" onAction="#onAction" prefHeight="25.0" prefWidth="60.0" text="Edit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="180.0" />
+      <Button fx:id="save" layoutX="474.0" layoutY="416.0" mnemonicParsing="false" onAction="#onAction" prefHeight="25.0" prefWidth="60.0" text="save" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="106.0" />
+      <Button fx:id="close" layoutX="549.0" layoutY="416.0" mnemonicParsing="false" onAction="#onAction" prefHeight="25.0" prefWidth="60.0" text="Close" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="30.0" />
+      <TableView fx:id="detail" layoutX="25.0" layoutY="43.0" prefHeight="351.0" prefWidth="600.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="compcol" prefWidth="130.0" text="Company Name" />
+            <TableColumn fx:id="ownercol" prefWidth="105.0" text="Owner Name" />
+          <TableColumn fx:id="subcol" prefWidth="95.0" text="Sub Group" />
+            <TableColumn fx:id="typecol" prefWidth="107.0" text="Type" />
+            <TableColumn fx:id="statecol" prefWidth="88.0" text="State" />
+            <TableColumn fx:id="taxcol" prefWidth="75.0" text="Tax Code" />
+        </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="14.0" text="Company Details : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

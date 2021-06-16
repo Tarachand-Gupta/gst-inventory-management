@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="createSalesPane" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="882.0" style="-fx-border-color: #000000; -fx-border-width: 2; -fx-border-radius: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.UpdateSales">
+   <children>
+      <ComboBox fx:id="spartyname" centerShape="false" layoutX="157.0" layoutY="55.0" onAction="#init_1" prefHeight="25.0" prefWidth="174.0" />
+      <GridPane centerShape="false" layoutX="50.0" layoutY="55.0" prefHeight="196.0" prefWidth="107.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="104.0" text="Party Name  :">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="105.0" text="Invoice No .  :" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="Chalan No .  :" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="107.0" text="Order No .    :" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="L.M. No.       :" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="Vehical No.  :" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane centerShape="false" layoutX="157.0" layoutY="90.0" prefHeight="162.0" prefWidth="152.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="schalanno" GridPane.rowIndex="1" />
+            <TextField fx:id="sorderno" GridPane.rowIndex="2" />
+            <TextField fx:id="slmno" GridPane.rowIndex="3" />
+            <TextField fx:id="svehicalno" prefHeight="15.0" prefWidth="152.0" GridPane.rowIndex="4" />
+            <ComboBox fx:id="sinvoiceno" prefWidth="150.0" />
+         </children>
+      </GridPane>
+      <GridPane centerShape="false" layoutX="337.0" layoutY="90.0" prefHeight="162.0" prefWidth="46.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="42.0" text="Date   : " />
+            <Label prefHeight="17.0" prefWidth="42.0" text="Date   : " GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="42.0" text="Date   : " GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="42.0" text="Date   : " GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="42.0" text="Mode : " GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane centerShape="false" layoutX="383.0" layoutY="90.0" prefHeight="162.0" prefWidth="174.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <DatePicker fx:id="sdate1" />
+            <DatePicker fx:id="sdate3" GridPane.rowIndex="2" />
+            <DatePicker fx:id="sdate4" GridPane.rowIndex="3" />
+            <DatePicker fx:id="sdate2" GridPane.rowIndex="1" />
+            <TextField fx:id="smode" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="spartynameadd" centerShape="false" layoutX="337.0" layoutY="55.0" mnemonicParsing="false" onAction="#buttonaction" text="+" />
+      <Label centerShape="false" layoutX="419.0" layoutY="14.0" text="Sales " textFill="#b5aaaa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <GridPane centerShape="false" layoutX="580.0" layoutY="90.0" prefHeight="162.0" prefWidth="107.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="22.0" prefWidth="105.0" text="Term        :">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="Way Bill    :" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="105.0" text="Brocker     :" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="Transport  :" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="104.0" text="Location    :" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane centerShape="false" layoutX="687.0" layoutY="90.0" prefHeight="162.0" prefWidth="152.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="sterm" />
+            <TextField fx:id="swaybill" GridPane.rowIndex="1" />
+            <TextField fx:id="sbroker" GridPane.rowIndex="2" />
+            <TextField fx:id="stransport" GridPane.rowIndex="3" />
+            <TextField fx:id="slocation" prefHeight="15.0" prefWidth="152.0" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TableView fx:id="pTable" layoutX="50.0" layoutY="287.0" prefHeight="115.0" prefWidth="790.0">
+        <columns>
+          <TableColumn fx:id="code" prefWidth="73.0" resizable="false" text="Code" />
+          <TableColumn fx:id="itemName" prefWidth="131.0" resizable="false" text="Item Name" />
+            <TableColumn fx:id="type" prefWidth="116.0" text="Type" />
+            <TableColumn fx:id="Quantitycolumn" prefWidth="120.0" text="Quantity" />
+            <TableColumn fx:id="percolumn" prefWidth="83.0" text="Per" />
+            <TableColumn fx:id="Ratecolumn" prefWidth="112.0" text="Rate" />
+            <TableColumn fx:id="Amountcolumn" prefWidth="154.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label centerShape="false" layoutX="51.0" layoutY="415.0" prefHeight="17.0" prefWidth="42.0" text="******" />
+      <TextField fx:id="scomment" centerShape="false" layoutX="93.0" layoutY="411.0" prefHeight="25.0" prefWidth="465.0" />
+      <Label centerShape="false" layoutX="581.0" layoutY="415.0" text="Gross Amount : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sgrossamount" centerShape="false" layoutX="690.0" layoutY="412.0" />
+      <Label centerShape="false" layoutX="395.0" layoutY="448.0" prefHeight="17.0" prefWidth="149.0" text="Save           :  Discount        :" />
+      <TextField fx:id="sdiscount" centerShape="false" layoutX="545.0" layoutY="444.0" prefHeight="25.0" prefWidth="98.0" promptText="0" />
+      <Label centerShape="false" layoutX="393.0" layoutY="478.0" prefHeight="17.0" prefWidth="152.0" text="Additional  :  pkg &amp; Others :" />
+      <TextField fx:id="spkgandothers" centerShape="false" layoutX="545.0" layoutY="474.0" prefHeight="25.0" prefWidth="98.0" promptText="0" />
+      <GridPane centerShape="false" layoutX="229.0" layoutY="499.0" prefHeight="89.0" prefWidth="83.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="10.0" prefWidth="39.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="10.0" prefWidth="35.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="I. GST" />
+            <Label text="C. GST" GridPane.rowIndex="1" />
+            <Label text="S. GST" GridPane.rowIndex="2" />
+            <TextField fx:id="sigst" prefHeight="25.0" prefWidth="18.0" GridPane.columnIndex="1" />
+            <TextField fx:id="scgst" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="ssgst" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label centerShape="false" layoutX="357.0" layoutY="510.0" prefHeight="17.0" prefWidth="98.0" text="Tax Code :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="staxcode" centerShape="false" layoutX="425.0" layoutY="506.0" prefHeight="25.0" prefWidth="107.0" />
+      <TextField fx:id="staxamount" centerShape="false" layoutX="545.0" layoutY="506.0" prefHeight="25.0" prefWidth="98.0" promptText="0" />
+      <Label centerShape="false" layoutX="455.0" layoutY="544.0" text="Other Charges :" />
+      <TextField fx:id="sothercharges" centerShape="false" layoutX="545.0" layoutY="540.0" prefHeight="25.0" prefWidth="98.0" promptText="0" />
+      <Label fx:id="sdiscountlabel" centerShape="false" layoutX="749.0" layoutY="448.0" text="0.00" />
+      <Label fx:id="spkglabel" centerShape="false" layoutX="749.0" layoutY="478.0" text="0.00" />
+      <Label fx:id="staxamountlabel" centerShape="false" layoutX="749.0" layoutY="510.0" text="0.00" />
+      <Label fx:id="sotherchargeslabel" centerShape="false" layoutX="749.0" layoutY="544.0" text="0.00" />
+      <Label centerShape="false" layoutX="594.0" layoutY="571.0" text="Bill Amount : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sbillamount" centerShape="false" layoutX="686.0" layoutY="568.0" />
+      <ButtonBar centerShape="false" layoutX="393.0" layoutY="600.0" prefHeight="40.0" prefWidth="441.0">
+        <buttons>
+            <Button fx:id="supdate" mnemonicParsing="false" onAction="#updatesale" text="Update" textFill="#0bf702">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="sclose" mnemonicParsing="false" onAction="#buttonaction" text="Close" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="51.0" layoutY="259.0" text="Select Product :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="selpro" centerShape="false" layoutX="157.0" layoutY="256.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Product Name or Code" />
+      <Button fx:id="addpro" layoutX="580.0" layoutY="256.0" mnemonicParsing="false" onAction="#onProductAdd" prefHeight="25.0" prefWidth="83.0" text="Add" />
+      <TextField fx:id="quant" layoutX="350.0" layoutY="256.0" prefHeight="25.0" prefWidth="63.0" promptText="Quantity" />
+      <TextField fx:id="per" layoutX="424.0" layoutY="256.0" prefHeight="25.0" prefWidth="63.0" promptText="Per" />
+      <TextField fx:id="rate" layoutX="501.0" layoutY="256.0" prefHeight="25.0" prefWidth="63.0" promptText="Rate" />
+    <Button fx:id="scalculate" layoutX="514.0" layoutY="570.0" mnemonicParsing="false" onAction="#calc_action" style="-fx-background-color: black; -fx-background-radius: 1;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
